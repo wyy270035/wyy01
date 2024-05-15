@@ -32,7 +32,11 @@
     </div>
   </body>
 	<p style="text-align:center;">
-  <button onclick="goBack()">退出</button>
-  <script>function goBack(){window.history.back();
+ <div style="
+    text-align:center;
+    padding:40px;
+    font-size:50px">
+    <button id="closeButton"onclick="closeWindow()">退出</button>
+    <script> function closeWindow() {window.top.close();}</script>
   }</script></p>
 </html>
